@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-image: radial-gradient(
+      circle at 2px 2px,
+      #000000 1px,
+      transparent 0
+    );
+    background-size: 32px 32px;
+    background-color: #fffdf7;
+    background-blend-mode: overlay;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #fffdf7;
+    opacity: 0.95;
+    z-index: -1;
+    pointer-events: none;
+  }
+
+  h1 {
+    @apply text-5xl md:text-7xl font-black tracking-tighter leading-[1.1] text-slate-900;
+  }
+
+  h2 {
+    @apply text-4xl md:text-5xl font-[var(--font-emilys-candy)] font-black mb-2 tracking-tight;
+  }
+
+  h3 {
+    @apply text-xl font-black group-hover:scale-105 transition-transform origin-left;
+  }
+}
