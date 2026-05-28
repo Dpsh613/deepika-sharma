@@ -32,7 +32,7 @@ export default function About() {
             transition={{ delay: 0.2 }}
           >
             <p className="text-lg md:text-xl font-bold text-teal-800 opacity-80 uppercase tracking-widest mb-4 md:mb-6">
-              The story behind the code
+              Building weirdly useful AI tools with MERN + LLMs.
             </p>
 
             <div className={`bg-white p-6 md:p-8 ${neobrutaContainer}`}>
