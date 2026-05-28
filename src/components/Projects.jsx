@@ -7,7 +7,7 @@ const PROJECTS = [
     subtitle: "AI Writing Assistant",
     link: "rewordy.vercel.app",
     color: "bg-yellow-200",
-    tags: ["AI", "NLP", "Groq", "Next.js", "Tailwind CSS", "Vercel"],
+    tags: ["NLP", "Groq", "Next.js"],
     status: "V1.0",
     description:
       "Built this to help people fix their phrasing without the bloat of Grammarly. Fast and minimal.",
@@ -17,7 +17,7 @@ const PROJECTS = [
     subtitle: "Local AI Plagiarism",
     link: "https://github.com/Dpsh613/CheckMate-A-Personal-Plagiarism-Pre-Checker",
     color: "bg-emerald-200",
-    tags: ["Privacy", "ChromaDB", "Sentence Transformers", "pdfplumber"],
+    tags: ["ChromaDB", "Sentence Transformers", "pdfplumber"],
     status: "Beta",
     description:
       "An experiment in local-first AI. Comparing drafts against PDFs without sending data to the cloud.",
@@ -27,7 +27,7 @@ const PROJECTS = [
     subtitle: "RAG Medical Chatbot",
     link: "github.com/Dpsh613/RAG-MEDICAL-CHATBOT",
     color: "bg-indigo-200",
-    tags: ["LangChain", "RAG", "Flask", "FAISS", "HuggingFace"],
+    tags: ["LangChain", "FAISS", "HuggingFace"],
     status: "Internal",
     description:
       "My deep dive into RAG pipelines. It reads medical PDFs and actually answers correctly.",
@@ -49,10 +49,7 @@ const neobrutaContainer =
 
 export default function Projects() {
   return (
-    <section
-      id="work"
-      className="py-24 px-6 bg-[#fffbf2] border-y-2 border-slate-900 overflow-hidden"
-    >
+    <section id="work" className="py-24 px-6 bg-teal-50 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         {/* Header Section */}
         <div className="mb-20 space-y-4">
@@ -69,7 +66,7 @@ export default function Projects() {
               "Yeah, I built this."
             </span>
             <p className="text-lg font-medium text-slate-600 italic">
-              — Constant shipping. Zero fluff.
+              — Constant building. Zero fluff.
             </p>
           </div>
         </div>

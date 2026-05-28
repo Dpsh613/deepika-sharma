@@ -60,7 +60,7 @@ export default function Experiments() {
           <motion.div
             animate={{ x: [0, -5, 0], y: [0, 5, 0] }}
             transition={{ repeat: Infinity, duration: 2 }}
-            className="absolute -top-[-4] -left-15 text-rose-500 hidden lg:block"
+            className="absolute -top-[-4] -left-15 text-rose-500 hidden md:block lg:block"
           >
             <MoveDownLeft size={52} strokeWidth={3} />
             <span className="font-mono text-xs font-black uppercase tracking-tighter block -rotate-12">
@@ -68,7 +68,7 @@ export default function Experiments() {
             </span>
           </motion.div>
 
-          <div className="flex items-center gap-2 bg-yellow-300 border-2 border-slate-900 px-4 py-2 font-mono text-sm font-black rotate-2 shadow-[4px_4px_0px_#000]">
+          <div className="flex items-center gap-2 bg-yellow-300 border-2 border-slate-900 sm:px-2 px-4 py-2 font-mono sm:text-xs text-sm font-black rotate-2 shadow-[4px_4px_0px_#000]">
             <FlaskConical size={18} />
             CAUTION: MAD SCIENCE INSIDE
           </div>

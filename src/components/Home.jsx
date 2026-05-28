@@ -1,14 +1,11 @@
+// pages/Home.jsx (or wherever your Home file is)
 import DynamicDeveloperTag from "../ui/DynamicDeveloperTag";
 import DynamicButton from "../ui/DynamicButton";
+import AiSpecialistTag from "../ui/AiSpecialistTag"; // Import the new component
 
 const HERO_STATS = [
   { label: "10+ Projects", color: "bg-fuchsia-200", rotation: "-rotate-2" },
   { label: "MERN Stack", color: "bg-cyan-200", rotation: "rotate-2" },
-  {
-    label: "AI Specialist... umm 'Soon To Be'",
-    color: "bg-amber-200",
-    rotation: "-rotate-1",
-  },
 ];
 
 const Home = () => {
@@ -20,19 +17,24 @@ const Home = () => {
   return (
     <section className="pt-16 pb-20 px-6 md:px-12 mx-auto max-w-7xl relative">
       <div className="flex flex-col gap-6 max-4xl">
-        {/* Tag */}
         <div>
           <DynamicDeveloperTag />
         </div>
-
         <h1>Hi, I'm Deepika Sharma</h1>
       </div>
+
       <p className="text-xl md:text-3xl font-bold mt-4 leading-relaxed bg-clip-text">
         Crafting clean web experiences powered by the{" "}
-        <span className="bg-yellow-200 px-2 rounded-lg">MERN Stack</span> &{" "}
-        <span className="bg-indigo-200 px-2 rounded-lg">AI-driven</span>{" "}
+        <span className="bg-yellow-200 px-2 rounded-lg border-2 border-transparent hover:border-slate-900 transition-colors">
+          MERN Stack
+        </span>{" "}
+        &{" "}
+        <span className="bg-indigo-200 px-2 rounded-lg border-2 border-transparent hover:border-slate-900 transition-colors">
+          AI-driven
+        </span>{" "}
         backends.
       </p>
+
       <div className="flex flex-wrap items-center gap-4 mt-8">
         <DynamicButton />
         <div className="flex gap-4">
@@ -45,7 +47,7 @@ const Home = () => {
             GitHub
           </a>
           <a
-            href="https://linkedin.com/in/deepika-sharma"
+            href="https://www.linkedin.com/in/deepika-sharma-a55753409"
             target="_blank"
             rel="noreferrer"
             className={`px-6 py-4 bg-blue-100 font-bold ${neobrutaBtn}`}
@@ -54,8 +56,10 @@ const Home = () => {
           </a>
         </div>
       </div>
+
       {/* Quick Stats Floating Below */}
-      <div className="flex flex-wrap gap-4 mt-12">
+      <div className="flex flex-wrap gap-6 mt-16 items-center">
+        {/* Render standard static stats */}
         {HERO_STATS.map((stat) => (
           <div
             key={stat.label}
@@ -64,6 +68,9 @@ const Home = () => {
             {stat.label}
           </div>
         ))}
+
+        {/* Render the Interactive AI Button with the Cat */}
+        <AiSpecialistTag neobrutaContainer={neobrutaContainer} />
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ const socialLinks = [
     name: "LinkedIn",
     handle: "deepika-sharma",
     icon: <FaLinkedin size={22} />,
-    link: "https://linkedin.com/in/deepika-sharma",
+    link: "https://www.linkedin.com/in/deepika-sharma-a55753409",
     hoverBg: "#ecfeff", // cyan-50
     accent: "#06b6d4", // cyan-500
   },
