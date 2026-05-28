@@ -15,7 +15,7 @@ const PROJECTS = [
   {
     title: "CheckMate",
     subtitle: "Local AI Plagiarism",
-    link: "https://github.com/Dpsh613/CheckMate-A-Personal-Plagiarism-Pre-Checker",
+    link: "github.com/Dpsh613/CheckMate-A-Personal-Plagiarism-Pre-Checker",
     color: "bg-emerald-200",
     tags: ["ChromaDB", "Sentence Transformers", "pdfplumber"],
     status: "Beta",
@@ -35,7 +35,7 @@ const PROJECTS = [
   {
     title: "BookVibe",
     subtitle: "Discovery Platform",
-    link: "https://bookvibe-dijo.onrender.com/",
+    link: "bookvibe-dijo.onrender.com",
     color: "bg-pink-200",
     tags: ["MERN", "Fullstack", "EPUB.js"],
     status: "Live",
